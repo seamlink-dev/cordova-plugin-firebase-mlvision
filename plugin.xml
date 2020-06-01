@@ -50,7 +50,7 @@
         <source-file src="src/android/FirebaseVisionPlugin.java" target-dir="by/alon22/cordova/firebase"/>
         <!-- <source-file src="src/android/FirebaseUtils.java" target-dir="by/alon22/cordova/firebase"/> -->
 
-        <preference name="FIREBASE_MLVISION_VERSION" default="24.+"/>
+        <preference name="FIREBASE_MLVISION_VERSION" default="17.+"/>
         <!-- <preference name="FIREBASE_MLVISION_BARCODE_MODEL" default="16.+"/> -->
 
         <framework src="com.google.firebase:firebase-ml-vision:$FIREBASE_MLVISION_VERSION" />
