@@ -4,7 +4,7 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.text.TextUtils;
 
-// import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcode;
+//import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcode;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 
 import org.json.JSONArray;
@@ -52,7 +52,7 @@ public class FirebaseUtils {
 
         return result;
     }
-    
+
     // public static JSONArray parseBarcode(List<FirebaseVisionBarcode> barcodes) throws Exception {
     //     JSONArray array = new JSONArray();
     //     for (FirebaseVisionBarcode barcode : barcodes) {
@@ -212,7 +212,7 @@ public class FirebaseUtils {
         return array;
     }
 
-     private static JSONObject parseBoundingBox(Rect rect) throws Exception {
+    private static JSONObject parseBoundingBox(Rect rect) throws Exception {
         JSONObject rectMap = new JSONObject();
         rectMap.put("x", rect.left);
         rectMap.put("y", rect.top);
@@ -221,9 +221,9 @@ public class FirebaseUtils {
 
         return rectMap;
     }
-    
-    private static String toISOString(FirebaseVisionBarcode.CalendarDateTime date) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z");
-        return dateFormat.format(date);
-    }
+
+    // private static String toISOString(FirebaseVisionBarcode.CalendarDateTime date) {
+    //     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z");
+    //     return dateFormat.format(date);
+    // }
 }
